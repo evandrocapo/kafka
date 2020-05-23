@@ -8,12 +8,19 @@
     "consign": "^0.1.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "kafka-node": "^5.0.0"
+    "node-rdkafka": "^2.8.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "nodemon": "^2.0.4",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2"
+  },
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js",
+    "test": "mocha",
+    "debug": "node --inspect app.js"
   },
   "author": "Evandro Capovilla",
   "license": "ISC"
